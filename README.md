@@ -1,6 +1,6 @@
 # astcalc
 
-based on pseudo-code posted on educational site
+based on pseudo-code posted on educational site   
 AST: https://web.cs.wpi.edu/~kal/PLT/PLT6.3.6.html
 
 regex and handmade parser create a number only calculator
