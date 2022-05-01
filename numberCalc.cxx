@@ -58,7 +58,7 @@ int main(int, char** )
         }
         Tb::Parser parser(tokens);
         double response = parser.start();
-        std::cout << "astcalc main: " << input << " = " << response << "\n\n";
+        std::cout << "astcalc: " << input << " = " << response << "\n\n";
 
         tokens.clear();
 
