@@ -13,13 +13,13 @@ Required:
            3.  wsl> ninja --version  # answer: (1.10.2)
            4.  wsl> cmake --version  # answer: (3.22.3)
 
-linux> git clone https://github.com/schley/astcalc
-linux> cd astcalc
-linux> mkdir build
-linux> cd build
-linux> cmake -G Ninja init ..
-linux> ninja
-linux> ./astcalc  (exit at prompt to terminate executable)
+linux> git clone https://github.com/schley/astcalc   
+linux> cd astcalc   
+linux> mkdir build   
+linux> cd build   
+linux> cmake -G Ninja init ..    
+linux> ninja    
+linux> ./astcalc  (exit at prompt to terminate executable)    
 
 Experiment with C++14 regex to create a lexer.  
 
@@ -29,7 +29,7 @@ example:
 
 linux> make
 
-linux> ./astcalc    # test number 6 for the calc.  Change exe name in Makefile as desired
+linux> ./astcalc   
 
 1> 45 * (3 / 15)
 
