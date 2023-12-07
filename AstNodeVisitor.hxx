@@ -16,7 +16,6 @@ class AstNodeVisitor
 public:
     virtual void visitNumberAstNode(const NumberAstNode* element) const = 0;
     virtual void visitOperatorAstNode(const OperatorAstNode* element) const = 0;    
-    // std::stack<double> rpnStack_;
 private:
 }; // class AstNodeVisitor
 
@@ -25,18 +24,16 @@ class AstNodeCalculateVisitor: public AstNodeVisitor
 public:
     virtual void visitNumberAstNode(const NumberAstNode* element) const;
     virtual void visitOperatorAstNode(const OperatorAstNode* element) const;
+    virtual ~AstNodeCalculateVisitor() = default;
 private:
-    // using RpnStack = std::stack<double>;
-    // RpnStack rpnStack_;
-    // static std::stack<double> rpnStack_;
-    // static RpnStack& get_stack();
 }; // class AstNodeCalculateVisitor
 
 class AstNodePrintVisitor: public AstNodeVisitor
 {
+public:
     void visitNumberAstNode(const NumberAstNode* element) const;
     void visitOperatorAstNode(const OperatorAstNode* element) const;
-
+    virtual ~AstNodePrintVisitor() = default;
 }; // NumberAstNodeVisitor
 
 } // namespace Tb
